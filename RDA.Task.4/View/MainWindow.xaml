@@ -1,0 +1,220 @@
+﻿<Window x:Class="RDA.Task._4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RDA.Task._4"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True"
+        Title="MainWindow" Height="450" Width="800">
+    <Border CornerRadius="30"
+            MouseDown="Border_MouseDown">
+        <Grid x:Name="Move"
+              MouseDown="Move_MouseDown">
+            <Frame NavigationUIVisibility="Hidden"
+               x:Name="MainFrame" Margin="125,100,0,0"
+                   />
+            <StackPanel VerticalAlignment="Top"
+                    HorizontalAlignment="Center">
+                <Rectangle Width="800" Height="100" Margin="0" RadiusX="30" RadiusY="30" x:Name="Rectangle">
+                    <Rectangle.Fill>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#594BFB" Offset="0"/>
+                            <GradientStop Color="#766BF2" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Left"
+                    VerticalAlignment="Center">
+                <Rectangle Width="125" Height="450" RadiusX="30"
+                       RadiusY="25"
+                           x:Name="Rectangle1">
+                    <Rectangle.Fill>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#7C71FE" Offset="0"/>
+                            <GradientStop Color="#1C119D" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+            </StackPanel>
+            <Image Source="/Image/Image.png"
+               Height="50"
+               Width="50"
+               Margin="10 10 10 10"
+               HorizontalAlignment="Right"
+               VerticalAlignment="Top"/>
+            <StackPanel HorizontalAlignment="Right"
+                   VerticalAlignment="Top"
+                    Margin="20 20 62 20">
+                <TextBlock FontSize="12" FontStyle="Italic" Foreground="White" FontWeight="Black" x:Name="Text">
+            Дмитрий Рыжиков
+                </TextBlock>
+                <TextBlock FontSize="12" FontStyle="Italic" Foreground="White" FontWeight="Black" x:Name="Text1">
+                Студент группы П-21-1
+                </TextBlock>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Left"
+                        VerticalAlignment="Bottom"/>
+            <StackPanel HorizontalAlignment="Left"
+                    VerticalAlignment="Center"
+                        Height="450"
+                        Width="120"
+                        Margin="0 0 0 0">
+                <Button Content="№4.1"
+                        HorizontalAlignment="Stretch"
+                        VerticalAlignment="Top"
+                    ToolTip="Задание №1"
+                    Background="Transparent"
+                    BorderBrush="{DynamicResource MaterialDesignShadowBrush}"
+                    Height="25"
+                    Width="70"
+                    Margin="0 3 0 0"
+                    Click="BtnTask1_Click"
+                    x:Name="BtnTask1"
+                        FontSize="15">
+                </Button>
+                <Button Content="№4.2"
+                    ToolTip="Задание №4.2"
+                    Background="Transparent"
+                    BorderBrush="{DynamicResource MaterialDesignShadowBrush}"
+                    Height="25"
+                    Width="70"
+                    Margin="0 5 0 0"
+                    Click="BtnTask2_Click"
+                    x:Name="BtnTask2"/>
+                <Button Content="№4.3"
+                    ToolTip="Задание №4.3"
+                    Background="Transparent"
+                    BorderBrush="{DynamicResource MaterialDesignShadowBrush}"
+                    Height="25"
+                    Width="70"
+                    Margin="0 5 0 0"
+                        Click="BtnTask3_Click"
+                    x:Name="BtnTask3"/>
+                <Button Content="№4.4"
+                    ToolTip="Задание №4.4"
+                    Background="Transparent"
+                    BorderBrush="{DynamicResource MaterialDesignShadowBrush}"
+                    Height="25"
+                    Width="70"
+                    Margin="0 5 0 0"
+                        Click="BtnTask4_Click"
+                    x:Name="BtnTask4"/>
+                <Button Content="№4.5"
+                    ToolTip="Задание №4.5"
+                    Background="Transparent"
+                    BorderBrush="{DynamicResource MaterialDesignShadowBrush}"
+                    Height="25"
+                    Width="70"
+                    Margin="0 5 0 0"
+                        Click="BtnTask5_Click"
+                    x:Name="BtnTask5"/>
+                <Button Content="№4.6"
+                    ToolTip="Задание №4.6"
+                    Background="Transparent"
+                    BorderBrush="{DynamicResource MaterialDesignShadowBrush}"
+                    Height="25"
+                    Width="70"
+                    Margin="0 5 0 0"
+                        Click="BtnTask6_Click"
+                    x:Name="BtnTask6"/>
+                <Button Content="№4.7"
+                    ToolTip="Задание №4.7"
+                    Background="Transparent"
+                    BorderBrush="{DynamicResource MaterialDesignShadowBrush}"
+                    Height="25"
+                    Width="70"
+                    Margin="0 5 0 0"
+                        Click="BtnTask7_Click"
+                    x:Name="BtnTask7"/>
+                <Button Content="№4.8"
+                    ToolTip="Задание №4.8"
+                    Background="Transparent"
+                    BorderBrush="{DynamicResource MaterialDesignShadowBrush}"
+                    Height="25"
+                    Width="70"
+                    Margin="0 5 0 0"
+                        Click="BtnTask8_Click"
+                    x:Name="BtnTask8"/>
+                <Button Content="№4.9"
+                    ToolTip="Задание №4.9"
+                    Background="Transparent"
+                    BorderBrush="{DynamicResource MaterialDesignShadowBrush}"
+                    Height="25"
+                    Width="70"
+                    Margin="0 5 0 0"
+                        Click="BtnTask9_Click"
+                    x:Name="BtnTask9"/>
+                <Button Content="№4.10"
+                    ToolTip="Задание №4.10"
+                    Background="Transparent"
+                    BorderBrush="{DynamicResource MaterialDesignShadowBrush}"
+                    Height="25"
+                    Width="75"
+                    Margin="0 5 0 0"
+                        Click="BtnTask10_Click"
+                    x:Name="BtnTask10"/>
+                <Button Content="№4.11"
+                    ToolTip="Задание №4.11"
+                    Background="Transparent"
+                    BorderBrush="{DynamicResource MaterialDesignShadowBrush}"
+                    Height="25"
+                    Width="75"
+                    Margin="0 5 0 0"
+                        Click="BtnTask11_Click"
+                    x:Name="BtnTask11"/>
+                <Button Content="№4.12"
+                    ToolTip="Задание №4.12"
+                    Background="Transparent"
+                    BorderBrush="{DynamicResource MaterialDesignShadowBrush}"
+                    Height="25"
+                    Width="75"
+                    Margin="0 5 0 0"
+                        Click="BtnTask12_Click"
+                    x:Name="BtnTask12"/>
+                <Button Content="№4.13"
+                    ToolTip="Задание №4.13"
+                    Background="Transparent"
+                    BorderBrush="{DynamicResource MaterialDesignShadowBrush}"
+                    Height="25"
+                    Width="75"
+                    Margin="0 5 0 0"
+                        Click="BtnTask13_Click"
+                    x:Name="BtnTask13"/>
+                <Button Content="№4.14"
+                    ToolTip="Задание №4.14"
+                    Background="Transparent"
+                    BorderBrush="{DynamicResource MaterialDesignShadowBrush}"
+                    Height="25"
+                    Width="75"
+                    Margin="0 5 0 0"
+                        Click="BtnTask14_Click"
+                    x:Name="BtnTask14"/>
+            </StackPanel>
+            <materialDesign:PackIcon Kind="Close"
+                                     VerticalAlignment="Top"
+                                     HorizontalAlignment="Center"
+                                         Foreground="White"
+                                         Height="30"
+                                         Width="30"
+                                         Margin="0 0 530 0"
+                                     x:Name="PackIcon"
+                                         MouseDown="PackIcon_MouseDown"
+                                         Cursor="Hand"/>
+            <materialDesign:PackIcon Kind="Home" 
+                                     VerticalAlignment="Top"
+                                     HorizontalAlignment="Center"
+                                     Foreground="White"
+                                     Height="30"
+                                     Width="30"
+                                     x:Name="PackIcon1" Cursor="Hand"
+                                     MouseDown="PackIcon1_MouseDown"/>
+        </Grid>
+    </Border>
+</Window>
